@@ -50,13 +50,12 @@ public:
 
 int main(int discriminant)
 {
-
-	QuadraticEquation();
+	QuadraticEquation value;
 	
 	if (discriminant > 0)
-		cout << "The roots for the numbers you entered are " << getRoot1() << " and " << getRoot2() << "." << endl;
+		cout << "The roots for the numbers you entered are " << value.getRoot1() << " and " << value.getRoot2() << "." << endl;
 	else if (discriminant == 0)
-		cout << "The root for the numbers you entered is " << getRoot1() << endl;
+		cout << "The root for the numbers you entered is " << value.getRoot1() << endl;
 	else
 		cout << "The numbers you entered have no real roots.";
 
