@@ -8,9 +8,9 @@ using namespace std;
 int main()
 {
 	Venue theSpot;
-	theSpot.addEvent(10, "Coffee Hour");    //Should work
-	theSpot.addEvent(11, "Brunch w/ Bob");  //Should work
-	theSpot.addEvent(11, "Bingo"); //Shouldn't work
+	theSpot.addEvent(2, "Coffee Hour");    //Should work
+	theSpot.addEvent(3, "Brunch w/ Bob");  //Should work
+	theSpot.addEvent(3, "Bingo"); //Shouldn't work
 
 	cout << theSpot.findEvent(10).getTitle() << endl; //Should find Coffee Hour
 	cout << theSpot.findEvent("Brunch w/ Bob").getTime() << endl;  //Should find 11 o'clock
