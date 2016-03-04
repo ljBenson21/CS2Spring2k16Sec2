@@ -7,9 +7,9 @@ using namespace std;
 bool Venue :: validTime(int time) // done
 {
 	if (scheduledEvents[time - 1].getTime()== -1)
-		return true;
+		return true; // since the time is already free, return true
 	else 
-		return false;
+		return false; // if the spot is filled return false
 }
 
 void Venue :: addEvent(int time, string name) // done
@@ -25,30 +25,27 @@ void Venue :: addEvent(int time, string name) // done
 		cout << "Lo siento , pero su caso fue no pudo ser programado. (Your event was failed to be scheduled)" << endl; 
 }
 
-Event Venue :: findEvent(int time)
+Event Venue  :: findEvent(int time) // done
 {
-	for (int i; i < 12; i++)
+	for (int i=0; i < 12; i++)
 	{
 		if (time == scheduledEvents[i].getTime())
 		{
-			cout << scheduledEvents[i].getTitle();
-			break;
+			return scheduledEvents[i]; // return the time of the event 
 		}
-		else
-			Event();
 	}
+		return Event(); // this is a free spot for you to place another event
 }
 
-Event Venue::findEvent(string name)
+Event Venue::findEvent(string name) // done
 {
-	for (int i; i < 12; i++)
+	for (int i=0; i < 12; i++)
 	{
 		if (name == scheduledEvents[i].getTitle())
 		{
-			cout << scheduledEvents[i].getTime();
-			break;
+			return scheduledEvents[i]; // return the title of the event
 		}
-		else
-			Event();
+		
 	}
+			return Event() ; // this is a free spot for you to place another event
 }

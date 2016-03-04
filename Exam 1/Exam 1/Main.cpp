@@ -8,13 +8,13 @@ using namespace std;
 int main()
 {
 	Venue theSpot;
-	theSpot.addEvent(2, "Coffee Hour");    //Should work
-	theSpot.addEvent(3, "Brunch w/ Bob");  //Should work
-	theSpot.addEvent(3, "Bingo"); //Shouldn't work
+	theSpot.addEvent(8, "Golf with da homies.");    //Should work
+	theSpot.addEvent(11, "Lunch down in Cour'd Alene, then some spikeball.");  //Should work
+	theSpot.addEvent(11, "Lunch date with my girl."); //Shouldn't work
 
-	cout << theSpot.findEvent(10).getTitle() << endl; //Should find Coffee Hour
-	cout << theSpot.findEvent("Brunch w/ Bob").getTime() << endl;  //Should find 11 o'clock
-	cout << theSpot.findEvent("Bingo").getTime() << endl; //Should print -1, because Bingo ain't there!
+	cout << theSpot.findEvent(8).getTitle() << endl; //Should find Golf with da homies
+	cout << theSpot.findEvent("Lunch down in Cour'd Alene, then some spikeball.").getTime() << endl;  //Should find 11 o'clock
+	cout << theSpot.findEvent("Lunch date with my girl.").getTime() << endl; //Should print -1, because I cant have lunch with bae...
 
 	return 0;
 }
