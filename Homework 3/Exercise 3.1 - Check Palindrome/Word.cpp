@@ -4,9 +4,8 @@ using std::string;
 using std::cin;
 using std::cout;
 
-void changeWord()
+void word::changeWord()
 {
-	string s;
 	cout << "Please enter a word. ";
 	getline(cin, s);
 
