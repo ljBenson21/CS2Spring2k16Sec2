@@ -2,7 +2,10 @@
 #include <string>
 #include "Event.h"
 #include "Venue.h"
-using namespace std;
+using std::string;
+using std::cout;
+using std::cin;
+using std::endl;
 
 bool Venue :: validTime(int time) // done
 {

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Event.h"
-using namespace std;
+using std::string;
 
 Event::Event() // done
 {
