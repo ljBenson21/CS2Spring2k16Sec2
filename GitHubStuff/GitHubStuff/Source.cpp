@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <ctime>
 #include <string>
 #include <cmath>
@@ -231,4 +231,4 @@ int main()
 	ex04();
 	ex05();
 	return 0;
-}
+}*/
