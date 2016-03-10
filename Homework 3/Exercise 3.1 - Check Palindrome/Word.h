@@ -10,8 +10,9 @@ class word
 private:
 	string s;
 public:
+	word();
 	void changeWord();
-	bool isPalindrome(const string& s);
+//	bool isPalindrome(const string& s);
 };
 
 #endif

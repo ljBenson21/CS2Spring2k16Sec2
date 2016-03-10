@@ -3,14 +3,17 @@
 using std::string;
 using std::cin;
 using std::cout;
+using std::endl;
 
+
+word::word()
+{
+	s = "";
+}
 void word::changeWord()
 {
 	cout << "Please enter a word. ";
-	getline(cin, s);
-
-}
-bool isPalindrome(const string& s)
-{
+	cin >> s;
+	
 
 }
