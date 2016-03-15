@@ -1,5 +1,4 @@
 #include <iostream>
-//#include "Word.h"
 #include <stack>
 #include <string>
 using std::string;
@@ -36,7 +35,7 @@ bool isPalindrome(const string& s)
 
 	while (i < j)  // while the first char of the string is less than the last
 	{
-		if (s[i] != s[j]) // if the ascii number of the char in the strings aren't the same, return false
+		if (tolower(s[i]) != tolower(s[j])) // if the ascii number of the char in the strings aren't the same, return false
 		{
 			return false;
 		}
