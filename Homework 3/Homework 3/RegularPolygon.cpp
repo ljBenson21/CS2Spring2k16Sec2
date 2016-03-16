@@ -5,8 +5,9 @@
 using std::cout;
 using std::cin;
 
-regularpolygon:: regularpolygon(int numsides, double lengthS) // polygon centered at (0,0)
+regularpolygon::regularpolygon(int numsides, double lengthS) // polygon centered at (0,0)
 {
+	x = 0; y = 0;
 	n = numsides;
 	side = lengthS;
 }

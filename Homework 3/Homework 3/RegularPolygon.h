@@ -13,10 +13,7 @@ public:
 	{
 		n = 3; side = 1; x = 0; y = 0; 
 	}
-	regularpolygon(int n, double side) // polygon centered at (0,0)
-	{
-		x = 0; y = 0;
-	}
+	regularpolygon(int n, double side); // polygon centered at (0,0)
 	regularpolygon(int n, double side, double x, double y); // user created polygon
 
 
