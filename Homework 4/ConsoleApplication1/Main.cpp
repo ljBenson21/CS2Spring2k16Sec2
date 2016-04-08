@@ -61,9 +61,9 @@ int main()
 	computingAvg(newArray, s);
 
 	cout << "The average of the numbers within the array is " << computingAvg(newArray, s) << "." << endl;
-	cout << "The numbers above the average that are in the set are " << numbersAbove(newArray, s) << "." << endl;
+	cout << "There are " << numbersAbove(newArray, s) << " numbers that are above this average." << endl;
 
 	delete[]newArray;
 
-
+	cin >> s;
 }
