@@ -1,23 +1,31 @@
-#include <iostream>
-using namespace std;
-
-
-int main()
-{
-	int size = 10; // creates a fixed number for size
-	int * list; // creates a pointer that points to list
-	list = new int[size]; // creates the array list[size]
-
-	doubleCapacity(list, size);
-
-	delete[] list;
-}
-int * doubleCapacity(const int* list, int size)
-{
-	int *list = new int[size * 2];
-
-	/*for (int i = 0; i < size; i++)
-		list[i] = 10;*/
-
-	return list;
-}
+//#include <iostream>
+//using namespace std;
+//
+//int* doubleCapacity(const int* list, int size)
+//{
+//	int* doubleArray = new int[size * 2];
+//
+//	for (int i = 0; i < 2 * size; i++)
+//		doubleArray[i] = NULL;
+//
+//	for (int i = 0; i < size; i++)
+//		doubleArray[i] = list[i];
+//
+//	
+//	cout << endl;
+//
+//	return doubleArray;
+//}
+//
+//int main()
+//{
+//	
+//	const int size = 10; // creates a variable for size and sets it to ten
+//
+//	
+//	int list[size]; // creates a pointer that points to list
+//	int* doubledlist = doubleCapacity(list, size); // creates the array list[size]
+//
+//	
+//	delete[] list;
+//}
