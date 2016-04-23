@@ -1,6 +1,9 @@
 #include <iostream>
 #include <vector>
 
+using std::cout;
+using std::endl;
+
 template <typename V>
 class vector
 {
@@ -59,7 +62,7 @@ unsigned const vector<V> :: size() // checks the size of the vector
 }
 
 template <typename V>
-const vector<V>:: at(int location) // returns the element of the vector in that location
+V const vector<V>:: at(int location) // returns the element of the vector in that location
 {
 	return elements[location];
 }
@@ -99,4 +102,9 @@ void vector<V> ::swap(vector v2) // swaps a vector with another vector then dele
 	{
 		push_back(temp[i]);
 	}
+}
+
+int main()
+{
+	cout << "I like patties" << endl;
 }
